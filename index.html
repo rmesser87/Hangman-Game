@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -5,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman</title>
+    <iframe width="0" height="0" src="http://youtuberepeater.com/watch?v=9CDbK2plvqw&name=BattleStar+Galactica+main+title+theme+2004" frameborder="0" allowfullscreen></iframe>
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="assets/java/game.js"></script>
 
 </head>
 
@@ -22,22 +25,36 @@
     </header>
     <div class="container">
         <div class="row" id="row1">
-            <div class="col" id="columns">filler text
-            </div>
-            <div class="col" id="columns">
-                <div class="row" id="row1a">PRESS ANY KEY TO GET STARTED!
-                    <br> WINS!
+            <div class="row center-block match-my-cols">
+                <div class="col-xs-12 col-md-8 text-center left">
+                    <h2 id="letsPlay">Press any key to get started!</h2>
+                    <h3>Current word:</h3>
+                    <div id="currentWord"></div>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h3>Letters Guessed:</h3>
+                            <div id="lettersGuessed">--</div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h3>Guesses Left:</h3>
+                            <div id="guessesLeft">--</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h3>Number of Wins:</h3>
+                            <div id="wins">0</div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h3>Number of Losses:</h3>
+                            <div id="losses">0</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row" id="row1b">CURRENT WORD</div>
-                <p id="ratefeld">_ _ _ _ _ _ _ _ _ </p>
-                <div class="row" id="row1c">NUMBER OF GUESS REMAINING</div>
-                <div class="row" id="row1d">LETTERS ALREADY GUESSED</div>
             </div>
         </div>
     </div>
-
-
-
 </body>
 
 </html>
