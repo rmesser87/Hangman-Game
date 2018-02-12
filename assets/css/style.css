@@ -1,0 +1,76 @@
+body {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background: black url(../images/stars.png) repeat;
+}
+
+h1 {
+  text-align: center;
+  font-family: monoton; 
+  color:	#D5AD6D; /*if no support for background-clip*/
+  background: -webkit-linear-gradient(transparent, transparent),
+  -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute; 
+   top: 180px; 
+   left: 0; 
+   width: 100%; 
+   font-size: 40px;
+}
+
+img.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+}
+
+#row1 {
+  border: solid 2px grey; 
+  outline: 5px solid red;
+  height: 500px;
+  margin-bottom: 200px;
+}
+
+#columns{
+  border: solid 2px white;
+}
+
+#row1a {
+  height: 33%;
+  text-align: center;
+}
+
+#row1b {
+  height: 17%;
+  text-align: center;
+}
+
+#row1c {
+  height: 20%;
+  text-align: center;
+}
+
+#row1d {
+  height: 30%;
+  text-align: center;
+}
